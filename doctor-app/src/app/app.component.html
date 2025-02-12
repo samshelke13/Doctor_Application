@@ -1,5 +1,14 @@
 <mat-toolbar> 
   <img src="assets/logo.png"/>
+<div class="container">
+  <nav>
+    <a mat-button routerLink="/home">Home</a>
+    <a mat-button routerLink="/about-doctor">About Doctor</a>
+    <a mat-button routerLink="/service">Services</a>
+    <a mat-button routerLink="/gallery">Gallery</a>
+    <a mat-button routerLink="/contact-us">Contact Us</a>
+  </nav>
+</div>
   <!-- <nav>
     <div class="container">
       <img src="assets/logo.png" width=100 height=100/>
@@ -17,29 +26,71 @@
       </div>
     </div>
   </nav> -->
+
+  
 </mat-toolbar>
 <section class="welcome-section">
   <h1>Welcome to <span class="highlight-title"> CardioHealth clinic </span> </h1>
   <h4> <span class="subtitle">Best Cardiologist in Pune -</span> <span class="name">&nbsp;Dr. Vishal Patil</span></h4>
-  <img src="assets/wedoc.jpg">
+  
+  <img class="welcome" src="assets/wedoc.jpg">
+  <h5>Dr. Vishal Patil is a highly skilled and academically oriented cardiologist. He is known for his humane approach,
+    kind and friendly demeanor and his knack of explaining complex medical terms in a simple and
+    lucid manner. He is a master at making patients feel at ease, allay their fears and is always eager 
+    to offer his helping hand. He is soft spoken, down to earth and easily approachable.</h5>
 </section>
 <section class="info-container">
   <div class="row">
     <div class="col-4">
       <mat-card>
-
+        <div class="card-img">
+          <img class="consultation-time" src="assets/Consultation Time.png">
+        </div>
+        <div class="card-text">
+          <h1>
+            Consultation Time
+          </h1>
+          <h4>7:00 AM to 9:00 PM</h4>
+        </div>
+        <div class="button-row">
+          <button mat-button>Read More..</button>
+        </div>
       </mat-card>
     </div>
+
+
     <div class="col-4">
       <mat-card>
-
-       
-        
+        <div class="card-img">
+          <img class="contact-mail" src="assets/contact-mail.png">
+        </div>
+        <div class="card-text">
+          <h1>
+            Contact Us
+          </h1>
+         <h4> +919657651926</h4>
+        </div>
+        <div class="button-row">
+          <button mat-button>Read More..</button>
+        </div>
       </mat-card>
     </div>
+
+
     <div class="col-4">
       <mat-card class="mat-elevation-z12">
-       
+               <div class="card-img">
+          <img class="appointment-book" src="assets/appointment-book.png">
+        </div>
+        <div class="card-text">
+          <h1>
+            Consultation Time
+          </h1>
+          <h4>Book your appointment </h4>
+        </div>
+        <div class="button-row">
+          <button mat-button>Read More..</button>
+        </div>
       </mat-card>
     </div>
   </div>
@@ -47,74 +98,81 @@
 
 </section>
 
-   <!-- About Doctor Section -->
 
 
+<section class="our-service">
+  <h1> <span class="highlight-title"> Our Services </span> </h1>
+<div class="row">
+  <div class="col-4">
+<mat-card class="service-card">
+   <div class="service-text">
+    <mat-card-title>2D Echo & Colour Droppler</mat-card-title>
+    <img mat-card-image src="assets/2D Echo & Colour Droppler.jpg" alt="Photo of a Shiba Inu">
+  </div>
+</mat-card>
+</div>
 
-   <section class="about-doctor py-6 bg-light">
-    <div class="container">
-      <h2 class="text-center">Best Cardiologist In Pune - Dr. Vishal Patil</h2>
-      
-        <div class="row">
-          <div class="col-3">
-            <div class="text-left"> 
-              <img src="assets/dr-vishal.png"  width=250 height=250/> </div>
-          </div>
-          <div class="col-9">
-            <p class="text-justify">Dr. Vishal Patil is a highly skilled and academically oriented cardiologist. He is known for his humane approach, kind and friendly demeanor and his knack of explaining complex medical terms in a simple and lucid manner. He is a master at making patients feel at ease, allay their fears and is always eager to offer his helping hand. He is soft spoken, down to earth and easily approachable. 
-              He has a robust academic record. He did his MBBS from Krishna Institute of Medical Sciences, Karad. During his MBBS, he holds distinction in Pharmacology and Microbiology and had always been among meritorious students did his MD from BJ Government Medical College, Pune and did his DM in Cardiology from Grant Government Medical College and Sir J.J. Group of Hospitals, Mumbai. After completing his super speciality degree in Cardiology, He worked as Assistant Professor in the department of Cardiology in Grant Government Medical College and Sir JJ Group of Hospitals.</p>
-          </div>
-        </div>
-        
+<div class="col-4">
+  <mat-card class="service-card">
     
-      
+     <div class="service-text">
+      <mat-card-title>Stress Test</mat-card-title>
+      <img mat-card-image src="assets/Stress Test.jpg" alt="Photo of a Shiba Inu">
     </div>
-  </section>
+ 
+  </mat-card>
+  </div>
 
-  <section >
-    <div class="container">
-      <h2 class="text-center mb-4">Our Services</h2>
-      <div class="row justify-content-center">
+  <div class="col-4">
+    <mat-card class="service-card">
 
-        
-  
-        <!-- First Column -->
-        <div class="col-md-6">
-          <ul class="list-group shadow-sm">
-            <li class="list-group-item p-3 border rounded">
-              <strong>Electrocardiogram (ECG/EKG):</strong> A diagnostic tool used to assess the electrical and muscular functions of the heart.
-            </li>
-            <li class="list-group-item p-3 border rounded">
-              <strong>2D Echo & Colour Doppler:</strong> A sonography and color Doppler of the heart, useful in diagnosing heart-related ailments like heart attacks, hypertension, valve diseases, and congenital heart conditions.
-            </li>
-            <li class="list-group-item p-3 border rounded">
-              <strong>Stress Test:</strong> A treadmill test that records ECGs to diagnose blockages in coronary arteries, useful for patients experiencing chest pain and breathlessness.
-            </li>
-          </ul>
-        </div>
-  
-        <!-- Second Column -->
-        <div class="col-md-6">
-          <ul class="list-group shadow-sm">
-            <li class="list-group-item p-3 border rounded">
-              <strong>Holter Monitoring:</strong> A 24-hour continuous monitoring of heart rate and rhythm to detect irregular heartbeats.
-            </li>
-            <li class="list-group-item p-3 border rounded">
-              <strong>Balloon Valvotomy:</strong> A minimally invasive procedure using a catheter to widen heart valves, inserted through an artery in the groin or arm.
-            </li>
-            <li class="list-group-item p-3 border rounded">
-              <strong>Pacemaker:</strong> A device used to regulate heart rhythm for patients with arrhythmia or heart rhythm disorders.
-            </li>
-          </ul>
-        </div>
-  
+       <div class="service-text">
+        <mat-card-title>Holter Monitoring</mat-card-title>
+        <img mat-card-image src="assets/Holter Monitoring (2).jpg" alt="Photo of a Shiba Inu">
       </div>
-      <div class="text-center mt-4">
-        <a href="/services" class="btn btn-primary">See More</a>
-      </div>
+    </mat-card>
     </div>
-  </section>
+</div>
+
+<div class="row" style="margin-top: 30px;">
+  <div class="col-4">
+<mat-card class="service-card">
+ 
+   <div class="service-text">
+    <mat-card-title>Electrocardiogram</mat-card-title>
+    <img mat-card-image src="assets/Electrocardiogram.jpg" alt="Photo of a Shiba Inu">
+  </div>
+
+</mat-card>
+</div>
+
+<div class="col-4">
+  <mat-card class="service-card" >
   
+     <div class="service-text">
+      <mat-card-title>Angiography</mat-card-title>
+      <img mat-card-image src="assets/Angiography.jpg" alt="Photo of a Shiba Inu">
+    </div>
+
+  </mat-card>
+  </div>
+
+  <div class="col-4">
+    <mat-card class="service-card" >
+     
+       <div class="service-text">
+        <mat-card-title>Pacemaker</mat-card-title>
+        <img mat-card-image src="assets/Pacemaker.jpg" alt="Photo of a Shiba Inu">
+      </div>
+  
+    </mat-card>
+    </div>
+    
+<div class="button-row" style="margin-top: 20px;">
+  <button mat-button>Read More..</button>
+</div>
+</div>
+</section>
   
 
   <section class="contact-us py-5 bg-light">
