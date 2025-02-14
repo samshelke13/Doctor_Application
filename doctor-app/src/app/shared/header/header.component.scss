@@ -1,0 +1,17 @@
+mat-toolbar {
+    height: 100px;
+    padding: 0px 20px;
+    background: white;
+    border-bottom: 8px solid #004681;
+    font-family: "Poppins", Sans-serif;
+    img {
+        width: 100px;
+    height: auto;
+    }
+    .container
+    {
+        text-align: right;
+        font-size: 200px;
+        --widgets-spacing: 20px 20px;
+    }
+}

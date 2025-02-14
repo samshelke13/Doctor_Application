@@ -12,9 +12,9 @@ import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 import {MatCardModule} from '@angular/material/card';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatListModule} from '@angular/material/list';
- 
- 
- 
+
+
+
 @NgModule({
     exports: [
         MatButtonModule,
@@ -30,7 +30,8 @@ import {MatListModule} from '@angular/material/list';
         MatCardModule,
         MatGridListModule,
         MatListModule
-    ]
+    ],
+
 })
  
 export class UiMaterialModule {

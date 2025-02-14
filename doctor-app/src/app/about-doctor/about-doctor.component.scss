@@ -1,0 +1,44 @@
+.about-doctor
+{
+    padding: 0px 10%;
+    height: 700px;
+    border-top:4px solid #ed232a ;
+    border-bottom: 8px solid #004681;
+    position: relative;
+    font-family: "Poppins", Sans-serif;
+    .ab-text{
+      
+        font-size: 45px;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 300;
+       .highlight-title {
+        font-weight: 700;
+        color: #004681;
+        font-family: "Poppins", Sans-serif;
+    }
+}
+.carousel
+{
+    
+        text-align: center;
+      }
+      
+      .carousel {
+        max-width: 500px;
+        margin: 0 auto;
+      }
+      
+      .carousel img {
+        width: 100%;
+      }
+
+    img
+    {
+        
+            width: 300px;
+            height: 200px;
+    }
+}
+
+
