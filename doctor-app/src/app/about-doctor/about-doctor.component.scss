@@ -1,7 +1,6 @@
 .about-doctor
 {
     padding: 0px 10%;
-    height: 700px;
     border-top:4px solid #ed232a ;
     border-bottom: 8px solid #004681;
     position: relative;
@@ -40,5 +39,19 @@
             height: 200px;
     }
 }
-
-
+.service
+{
+  
+    padding: 2%;
+        h1 
+        {
+            text-align: center;
+        }
+        
+    
+    mat-card {
+        background: white;
+        padding: 50px 10%;
+            font-size: 18px;   
+}
+}

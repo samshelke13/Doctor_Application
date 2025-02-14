@@ -12,6 +12,7 @@ import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 import {MatCardModule} from '@angular/material/card';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatListModule} from '@angular/material/list';
+import { NgImageSliderModule } from 'ng-image-slider';
 
 
 
@@ -29,7 +30,8 @@ import {MatListModule} from '@angular/material/list';
         MatSlideToggleModule,
         MatCardModule,
         MatGridListModule,
-        MatListModule
+        MatListModule,
+        NgImageSliderModule
     ],
 
 })

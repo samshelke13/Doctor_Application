@@ -1,12 +1,16 @@
 <section class="about-doctor">
 <div class="ab-text">
     <h1><span class="highlight-title"> Best Cardiologist In Pune - Dr. Vishal Patil </span></h1>
-<img src="assets/dr-vishal1.png" alt="">
-<img src="assets/dr-vishal2.jpg" alt="">
-<img src="assets/dr-vishal3.jpg" alt="">
-<img src="assets/dr-vishal4.jpg" alt="">
-    
+ 
 
+  <ng-image-slider
+    #nav
+    [images]="imageObject"
+    [infinite]="true"
+    [autoSlide]="1"
+    [imageSize]="{ width:500, height: 500 }"
+    
+  ></ng-image-slider>
 </div>
 
 <h5>
@@ -16,5 +20,44 @@
   </h5>
 
 
-</section>
 
+  <section class="service">
+    <h1> <span class="highlight-title"> Our Services </span> </h1>
+    <div class="row">
+      <div class="col-6">
+        <mat-card>
+          <div class="card-text">
+            <ul>
+                <li>Stress Test (Treadmill Test, TMT)</li>
+                <li>2 D Echocardiography and Colour Doppler (2D Echo)</li>
+                <li>Paediatric Echocardiography</li>
+                <li>Neonatal Echocardiography</li>
+                <li>Strain Imaging</li>
+                <li>Dobutamine Stress Echo</li>
+                <li>ECG</li>
+                <li>Holter Monitoring</li>
+            </ul>
+          </div>
+        </mat-card>
+      </div>
+  
+      <div class="col-6">
+        <mat-card>
+          <div class="card-text">
+            <ul>
+                <li>Pre- operative Cardiac Fitness</li>
+                <li>Rhythm Clinic</li>
+                <li>Cardiac Fitness Check-up</li>
+                <li>Angiography</li>
+                <li>Angioplasty</li>
+                <li>Pacemaker Implantation</li>
+                <li>Balloon Valvotomies</li>
+                <li>Ambulatory Blood Pressure Monitoring (ABPM)</li>
+            </ul>
+          </div>
+        </mat-card>
+      </div>
+      </div>
+      </section>
+
+  
