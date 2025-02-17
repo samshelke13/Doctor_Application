@@ -2,7 +2,6 @@
 {
     padding: 0px 10%;
     border-top:4px solid #ed232a ;
-    border-bottom: 8px solid #004681;
     position: relative;
     font-family: "Poppins", Sans-serif;
     .ab-text{
@@ -16,42 +15,28 @@
         color: #004681;
         font-family: "Poppins", Sans-serif;
     }
-}
-.carousel
-{
-    
-        text-align: center;
-      }
-      
-      .carousel {
-        max-width: 500px;
-        margin: 0 auto;
-      }
-      
-      .carousel img {
-        width: 100%;
-      }
 
-    img
+    h5 
     {
-        
-            width: 300px;
-            height: 200px;
-    }
-}
-.service
-{
+      padding: 2%;
+      text-align: justify;
+      font-size: 16px;
+      margin-left: 500px;
+      width: 500px;
+      color: #004680;
+      text-transform: none;
   
-    padding: 2%;
-        h1 
-        {
-            text-align: center;
-        }
-        
-    
-    mat-card {
-        background: white;
-        padding: 50px 10%;
-            font-size: 18px;   
-}
+    }
+
+  }
+
+
+  .image-slider
+  {
+    height: 500px;
+    width: 500px;
+    margin-right: 400px;
+    margin-top: -558px;
+  }
+
 }

@@ -1,13 +1,26 @@
-.contact-us
-{
-    padding: 2%;
-    float:left;
-    width: 528px;
-    font-size: 15px;
-}
-.quick-link
-{
-    padding: 2%;
-     float:right;
-     width: 700px;
-}
+// .contact-us
+// {
+//     padding: 2%;
+//     float:left;
+//     width: 528px;
+//     font-size: 15px;
+// }
+// .quick-link
+// {
+//     padding: 2%;
+//      float:right;
+//      width: 700px;
+// }
+
+
+.footer {
+    border-top: 8px solid #004681;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    background-color: #ffffff;
+    color: rgb(3, 3, 3);
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+  }
