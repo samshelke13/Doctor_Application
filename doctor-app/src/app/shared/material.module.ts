@@ -13,7 +13,9 @@ import {MatCardModule} from '@angular/material/card';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatListModule} from '@angular/material/list';
 import { NgImageSliderModule } from 'ng-image-slider';
-
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatNativeDateModule } from '@angular/material/core';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -31,7 +33,11 @@ import { NgImageSliderModule } from 'ng-image-slider';
         MatCardModule,
         MatGridListModule,
         MatListModule,
-        NgImageSliderModule
+        NgImageSliderModule,
+        MatDatepickerModule,
+        MatNativeDateModule,
+        FormsModule,
+        ReactiveFormsModule
     ],
 
 })

@@ -1,0 +1,42 @@
+<mat-card class="appointment-card">
+    <mat-card-title>Book Appointment</mat-card-title>
+    <mat-divider></mat-divider>
+  
+    <form [formGroup]="appointmentForm" (ngSubmit)="submitAppointment()">
+      
+      <!-- Full Name -->
+      <mat-form-field class="full-width">
+        <mat-label>Full Name</mat-label>
+        <input matInput formControlName="fullName" required>
+      </mat-form-field>
+  
+      <!-- Mobile Number -->
+      <mat-form-field class="full-width">
+        <mat-label>Mobile Number</mat-label>
+        <input matInput formControlName="mobile" type="tel" required>
+      </mat-form-field>
+  
+      <!-- Appointment Date -->
+      <mat-form-field class="full-width">
+        <mat-label>Appointment Date</mat-label>
+        <input matInput [matDatepicker]="picker" formControlName="appointmentDate" required>
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
+  
+      <!-- Time Slot -->
+      <mat-form-field class="full-width">
+        <mat-label>Preferred Time Slot</mat-label>
+        <mat-select formControlName="timeSlot" required>
+          <mat-option *ngFor="let slot of timeSlots" [value]="slot">{{ slot }}</mat-option>
+        </mat-select>
+      </mat-form-field>
+  
+      <!-- Submit Button -->
+      <button mat-raised-button color="primary" type="submit" [disabled]="appointmentForm.invalid">
+        Book Appointment
+      </button>
+  
+    </form>
+  </mat-card>
+  
