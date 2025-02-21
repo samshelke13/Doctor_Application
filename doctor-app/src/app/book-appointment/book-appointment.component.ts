@@ -1,13 +1,12 @@
 import { Component } from '@angular/core';
-import { UiMaterialModule } from '../shared/material.module';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-
+import { UiMaterialModule } from '../shared/material.module';
 
 @Component({
   selector: 'app-book-appointment',
   imports: [UiMaterialModule],
   templateUrl: './book-appointment.component.html',
-  styleUrl: './book-appointment.component.scss'
+  styleUrls: ['./book-appointment.component.scss']
 })
 export class BookAppointmentComponent {
   appointmentForm: FormGroup;
@@ -29,5 +28,4 @@ export class BookAppointmentComponent {
       this.appointmentForm.reset();
     }
   }
-
 }
